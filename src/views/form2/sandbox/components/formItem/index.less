@@ -1,0 +1,33 @@
+.box-hover() {
+  transition: border 0.1s ease;
+  border: 2px solid #ecf2fc;
+  &:hover {
+    border: 2px dotted #3573de;
+    cursor: move;
+  }
+}
+
+.form-sandbox {
+  &__payground {
+    &__box {
+      width: 100%;
+      background-color: #ecf2fc;
+      padding: 10px 10px 0;
+      margin-bottom: 10px;
+      .box-hover();
+    }
+    &__item {
+      position: relative;
+      .flex-column-stretch();
+      .t-date-picker,
+      .t-date-range-picker {
+        width: 100%;
+      }
+    }
+    &__idtext{
+      padding-left: 6px;
+      color:#999;
+      font-size: 12px;
+    }
+  }
+}

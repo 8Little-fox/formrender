@@ -1,0 +1,22 @@
+.form-sandbox {
+  &__components {
+    .flex-column-start();
+    width: 200px;
+    flex-wrap: wrap;
+    &__item {
+      width: 180px;
+      height: 40px;
+      margin: 0 10px 10px 0;
+      background-color: #d4e3fc;
+      border: 1px solid #4787f0;
+      font-size: 14px;
+      color: #333;
+      text-align: center;
+      line-height: 40px;
+      &:hover,
+      &:focus {
+        cursor: move;
+      }
+    }
+  }
+}
